@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://jsuites.net/v4/jsuites.js"></script>
+    <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
+</head>
+</head>
+<style>
+#div-container{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black; width: 560px; height: auto;
+}
+
+#x{
+    border: 1px solid black;
+    background-color: yellow;
+    padding: 5px;
+}
+.th{
+    border: 1px solid black;
+    width: 5px;
+    height: 5px;
+    background-color: rgb(213, 232, 250);
+    text-align: center;
+    padding: 5px 15px;
+}
+.td{
+    border: 1px solid black;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    text-align: center;
+    padding: 5px 15px;
+} 
+</style>
+<body>
+    <form action="">
+        <h1>Choose a city</h1>
+        <div id="dropdown"></div>
+    </form>
+    <hr />
+    <form action="">
+    <h1>My form</h1>
+    <div id="user-name-div1">
+        <label for="first_name1">My name:</label>
+        <input id="user-name" type="text" placeholder="Enter name" required>
+    </div>
+    <br /><br />
+    <div id="password-div">
+        <label for="password">My password:</label>
+        <input id="user-password" type="password" placeholder="Enter password" minlength="8" maxlength="20" required>
+        <br /><b style="color: red;">Password requirments 8-20 digits</b>
+        <br /><br />
+    </div>
+    <div id="Email-div">
+        <label for="email">My email:</label>
+        <input type="email" placeholder="Enter email" required>
+    </div>
+    <br />
+    <input type="submit" value="Send">
+    </form>
+    <hr />
+    <h1>Tomato pasta bake</h1>
+    <p>Make this simple student <b>pasta and tomato</b> dish for a delicious, filling and budget-friendly supper. It is
+        a great way to use up simple storecupboard ingredients.</p>
+    <h3>Ingredients</h3>
+    <ul>
+        <li>1 tbsp olive oil</li>
+        <li>1 onion, chopped</li>
+        <li>400g can cherry or chopped tomatoes</li>
+        <li>pinch sugar</li>
+    </ul>
+    <h3>Preparation</h3>
+    <ol>
+        <li>Heat the oil in a medium pan and fry the onion for 5 mins until softened and lightly golden.</li>
+        <li>Meanwhile, cook the pasta according to pack instructions. Heat the grill to high. Mix together the cheese
+            and breadcrumbs.</li>
+        <li>Drain the pasta and stir into the sauce. Tip in the frankfurters and spoon into a heatproof dish.</li>
+    </ol>
+    <hr />
+    <form action="">
+        <h1>Let's go somewhere</h1>
+        <div id="user-name-div2">
+            <label for="first_name2">First name:</label>
+            <input type="text" placeholder="Enter name" autofocus required>
+        </div>
+        <br />
+        <div id="user-last-name-div1">
+            <label for="last_name2">Family name:</label>
+            <input type="text" placeholder="Enter family name" required>
+        </div>
+        <br />
+        <div id="redio-container">
+            <label for="text">Gender:</label>
+            <br /><br />
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label><br />
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label><br />
+            <input type="radio" id="other" name="gender" value="Other" required>
+            <label for="other">Other</label>
+        </div>
+        <br /><br />
+        <label for="city">Choose a city:</label>
+        <select name="city" id="user-place">
+            <option value="option1">Tel-Aviv</option>
+            <option value="option1">Holon</option>
+            <option value="option1">Bat Yam</option>
+            <option value="option1">Ramat Gan</option>
+            <option value="option1">Rishon LeTsiyon</option>
+            <option value="option1">Ness Ziona</option>
+            <option value="option1">Rehovot</option>
+            <option value="option1">Netanya</option>
+            <option value="option1">Haifa</option>
+        </select>
+        <br /><br />
+<label for="travelDate">Date to travel:</label><br /><br />
+<label for="from-time">From:</label>
+<input type="date" required>
+<label for="till-time">To:</label>
+<input type="date" required>
+<br /><br />
+<label for="deals-list">Give me deals for:</label><br /><br />
+<input type="checkbox" id="deal1" name="deal1" value="kiev">
+<label for="deal1">Kiev</label><br />
+<input type="checkbox" id="deal2" name="deal2" value="amsterdam">
+<label for="deal2">Amsterdam</label><br />
+<input type="checkbox" id="deal3" name="deal3" value="roma">
+<label for="deal3">Roma</label><br />
+<input type="checkbox" id="deal4" name="deal4" value="london">
+<label for="deal4">London</label><br /><br />
+<input type="submit" value="Send">
+    </form>
+    <hr />
+    <h1>Ecom Academy</h1>
+    <br />
+    <h3>address</h3>
+    <p>XX Ramat gan</p>
+    <h3>Phone</h3>
+    <p>054-999-8888</p>
+    <h3>Website</h3>
+    <a href="https://www.ecomschool.co.il/" target="_blank">click here.</a>
+    <h3>Opening hours</h3>
+    <table>
+        <thead>
+        <th>-</th>
+        <th>Morning</th>
+        <th>Afternoon</th>
+    </thead>
+    <tbody>
+        <th>Sunday</th>
+        <td>Closed</td>
+        <td>Closed</td>
+    </tbody>
+    <tbody>
+        <th>Monday</th>
+        <td>Closed</td>
+        <td>13:30-17:30</td>
+    </tbody>
+    <tbody>
+        <th>Tuesday</th>
+        <td>08:30-12:15</td>
+        <td>13:30-17:30</td>
+    </tbody>
+    <tbody>
+        <th>Wednesday</th>
+        <td>08:30-12:15</td>
+        <td>13:30-17:30</td>
+    </tbody>
+    <tbody>
+        <th>Thursday</th>
+        <td>08:30-12:15</td>
+        <td>13:30-17:30</td>
+    </tbody>
+    <tbody>
+        <th>Friday</th>
+        <td>08:30-12:15</td>
+        <td>13:30-17:30</td>
+    </tbody>
+    <Tfoot>
+        <th>Saturday</th>
+        <td>09:00-12:00</td>
+        <td>Closed</td>
+    </Tfoot>
+    </table>
+<hr />
+<h1>Fortnite</h1>
+<p>Fortnite is an online video game developed by Epic Games and released in 2017.<br />
+It is available in three distinct game mode versions that otherwise share the same general gameplay and game engine: Fortnite: Save the World,<br />
+a cooperative hybrid-tower defense-shooter-survival game for up to four players<br />
+to fight off zombie-like creatures and defend objects with traps and fortifications they can build</p>
+<h3>Characters</h3>
+<table>
+    <tr>
+        <th>Picture</th>
+        <th>Name</th>
+        <th>Date of Birth</th>
+        <th>Actions</th>
+    <tr>
+    <tr>
+        <th><img src="images/Bandolette.png" alt="Bandolette character image from fortnite" style="width: 50px;"></th>
+        <th>Bandolette</th>
+        <td>2000</td>
+        <td><button>Modify</button><button>Delete</button></td>
+    <tr>
+    <tr>
+        <th><img src="images/Big Chuggus.png" alt="Big Chuggus character image from fortnite" style="width: 50px;"></th>
+        <th>Big Chuggus</th>
+        <td>2001</td>
+        <td><button>Modify</button><button>Delete</button></td>
+    <tr>
+    <tr>
+        <th><img src="images/Gut Bomb.png" alt="Gut Bomb character image from fortnite" style="width: 50px;"></th>
+        <th>Gut Bomb</th>
+        <td>2003</td>
+        <td><button>Modify</button><button>Delete</button></td>
+    </tr>
+</table>
+<hr />
+<div id="div-container">
+<table>
+
+<tr>
+    <th id="x">X</th>
+    <th class="th">1</th>
+    <th class="th">2</th>
+    <th class="th">3</th>
+    <th class="th">4</th>
+    <th class="th">5</th>
+    <th class="th">6</th>
+    <th class="th">7</th>
+    <th class="th">8</th>
+    <th class="th">9</th>
+    <th class="th">10</th>
+</tr>
+<tr>
+    <th class="th">1</th>
+    <td class="td">1</td>
+    <td class="td">2</td>
+    <td class="td">3</td>
+    <td class="td">4</td>
+    <td class="td">5</td>
+    <td class="td">6</td>
+    <td class="td">7</td>
+    <td class="td">8</td>
+    <td class="td">9</td>
+    <td class="td">10</td>
+</tr>
+<tr>
+    <th class="th">2</th>
+    <td class="td">2</td>
+    <td class="td">4</td>
+    <td class="td">6</td>
+    <td class="td">8</td>
+    <td class="td">10</td>
+    <td class="td">12</td>
+    <td class="td">14</td>
+    <td class="td">16</td>
+    <td class="td">18</td>
+    <td class="td">20</td>
+</tr>
+<tr>
+    <th class="th">3</th>
+    <td class="td">3</td>
+    <td class="td">6</td>
+    <td class="td">9</td>
+    <td class="td">12</td>
+    <td class="td">15</td>
+    <td class="td">18</td>
+    <td class="td">21</td>
+    <td class="td">24</td>
+    <td class="td">27</td>
+    <td class="td">30</td>
+</tr>
+<tr>
+    <th class="th">4</th>
+    <td class="td">4</td>
+    <td class="td">8</td>
+    <td class="td">12</td>
+    <td class="td">16</td>
+    <td class="td">20</td>
+    <td class="td">24</td>
+    <td class="td">28</td>
+    <td class="td">32</td>
+    <td class="td">36</td>
+    <td class="td">40</td>
+</tr>
+<tr>
+    <th class="th">5</th>
+    <td class="td">5</td>
+    <td class="td">10</td>
+    <td class="td">15</td>
+    <td class="td">20</td>
+    <td class="td">25</td>
+    <td class="td">30</td>
+    <td class="td">35</td>
+    <td class="td">40</td>
+    <td class="td">45</td>
+    <td class="td">50</td>
+</tr>
+<tr>
+    <th class="th">6</th>
+    <td class="td">6</td>
+    <td class="td">12</td>
+    <td class="td">18</td>
+    <td class="td">24</td>
+    <td class="td">30</td>
+    <td class="td">36</td>
+    <td class="td">42</td>
+    <td class="td">48</td>
+    <td class="td">54</td>
+    <td class="td">60</td>
+</tr>
+<tr>
+    <th class="th">7</th>
+    <td class="td">7</td>
+    <td class="td">14</td>
+    <td class="td">21</td>
+    <td class="td">28</td>
+    <td class="td">35</td>
+    <td class="td">42</td>
+    <td class="td">49</td>
+    <td class="td">56</td>
+    <td class="td">63</td>
+    <td class="td">70</td>
+</tr>
+<tr>
+    <th class="th">9</th>
+    <td class="td">9</td>
+    <td class="td">18</td>
+    <td class="td">27</td>
+    <td class="td">36</td>
+    <td class="td">45</td>
+    <td class="td">54</td>
+    <td class="td">63</td>
+    <td class="td">72</td>
+    <td class="td">81</td>
+    <td class="td">90</td>
+</tr>
+<tr>
+    <th class="th">10</th>
+    <td class="td">10</td>
+    <td class="td">20</td>
+    <td class="td">30</td>
+    <td class="td">40</td>
+    <td class="td">50</td>
+    <td class="td">60</td>
+    <td class="td">70</td>
+    <td class="td">80</td>
+    <td class="td">90</td>
+    <td class="td">100</td>
+</tr>
+</table>
+</div>
+    <script src="Script.js"></script>
+</body>
+</html>
