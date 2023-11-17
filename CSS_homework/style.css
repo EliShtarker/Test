@@ -109,26 +109,14 @@ table {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
+    width: 30px;
 }
 
 th, td {
     border: 0px solid #dddddd;
     text-align: left;
     padding: 0px;
-}
-
-th {
     background-color: #f2f2f2;
 }
-table {
-            width: 100px; /* Adjust the size of the heart /
-            height: 120px; / Adjust the size of the heart /
-            border-collapse: collapse;
-            margin: 20px auto;
-        }
 
-        td {
-            width: 50px; / Adjust the size of the heart /
-            height: 60px; / Adjust the size of the heart */
-            padding: 0;
-        }
+
