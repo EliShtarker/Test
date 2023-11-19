@@ -1,0 +1,15 @@
+<table>
+<tr>
+<td><img  class="pixel" src="images/white.jpg" alt="white pixel"></td>
+
+<td><img  class="pixel" src="images/white.jpg" alt="white pixel"></td>
+
+<td><img  class="pixel" src="images/white.jpg" alt="white pixel"></td>
+
+<td><img  class="pixel" src="images/white.jpg" alt="white pixel"></td>
+
+<td><img  class="pixel" src="images/white.jpg" alt="white pixel"></td>
+ 
+</tr>
+
+</table>
