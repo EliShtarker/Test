@@ -1,0 +1,751 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+/*EX:1*/
+#container {
+    background-color: black;
+    height: 400px;
+    width: 400px;
+
+}
+
+#centerContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+#header {
+    height: 50px;
+    width: auto;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#text1 {
+    color: white;
+    text-shadow: 3px 3px 5px red;
+}
+
+#side1,
+side2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 20%;
+    background-color: white;
+    background-image: linear-gradient(0deg, white, blue);
+}
+
+.text2 {
+    color: yellow;
+    text-shadow: -2px -2px black;
+}
+
+#center {
+    height: 300px;
+    width: 80%;
+    background: url("images/Untitled-1.png") no-repeat;
+}
+
+#frame1 {
+    background-color: rgba(134, 0, 255, 0.2);
+    height: 300px;
+    width: auto;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: auto;
+    background-color: brown;
+}
+
+/*EX:2*/
+#container2 {
+    height: 400px;
+    width: 400px;
+    background-color: black;
+}
+
+#sun1 {
+    width: 50px;
+    height: 50px;
+    background: url("images/sun.png") no-repeat;
+    position: relative;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    0% {
+        top: 50px;
+        left: 50px
+    }
+
+    50% {
+        top: 300px;
+        left: 50px
+    }
+
+    100% {
+        top: 50px;
+        left: 50px
+    }
+}
+
+
+#cloud1 {
+    width: 50px;
+    height: 50px;
+    background: url("images/cloud.png") no-repeat;
+    position: relative;
+    animation: mycloud1 5s infinite;
+}
+
+@keyframes mycloud1 {
+    0% {
+        top: -50px;
+        left: 100px
+    }
+
+    50% {
+        top: -50px;
+        left: 250px
+    }
+
+    100% {
+        top: -50px;
+        left: 100px
+    }
+}
+
+#cloud2 {
+    width: 50px;
+    height: 50px;
+    background: url("images/cloud.png") no-repeat;
+    position: relative;
+    animation: mycloud2 5s infinite;
+}
+
+@keyframes mycloud2 {
+    0% {
+        top: 150px;
+        left: 250px
+    }
+
+    50% {
+        top: 150px;
+        left: 100px
+    }
+
+    100% {
+        top: 150px;
+        left: 250px
+    }
+}
+
+#sun2 {
+    width: 50px;
+    height: 50px;
+    background: url("images/sun.png") no-repeat;
+    position: relative;
+    animation: mymove2 5s infinite;
+}
+
+@keyframes mymove2 {
+    0% {
+        top: 250px;
+        left: 300px
+    }
+
+    50% {
+        top: 0px;
+        left: 300px
+    }
+
+    100% {
+        top: 250px;
+        left: 300px
+    }
+}
+
+/*EX:3*/
+#container3 {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid gray;
+    background-color: skyblue;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+#container3>div {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 75px;
+    margin: 1px;
+    justify-content: center;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#circle1 {
+    position: relative;
+    animation: myCircle1 2s infinite;
+}
+
+@keyframes myCircle1 {
+    10% {
+        background-color: red;
+        top: 0px;
+        left: 0px
+    }
+
+    20% {
+        top: 0px;
+        left: 0px;
+        background-color: orange;
+    }
+
+    30% {
+        top: 0px;
+        left: 0px;
+        background-color: yellow;
+    }
+    40% {
+        top: 178px;
+        left: 178px;
+        background-color: green;
+    }
+    50% {
+        top: 178px;
+        left: 178px;
+        background-color: lightgreen;
+    }
+    60% {
+        top: 178px;
+        left: 178px;
+        background-color: cyan;
+    }
+    70%{
+        top: 0px;
+        left: 0px;
+        background-color: blue;
+    }
+    80%{
+        top: 0px;
+        left: 0px;
+        background-color: magenta;
+    }
+    90%{
+        top: 0px;
+        left: 0px;
+        background-color: purple;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: red;
+    }
+}
+
+#circle2 {
+    position:relative;
+    animation: myCircle2 2s infinite;
+}
+
+@keyframes myCircle2 {
+    10% {
+        background-color: orange;
+        top: 0px;
+        left: 0px
+    }
+
+    20% {
+        top: 0px;
+        left: 0px;
+        background-color: yellow;
+    }
+
+    30% {
+        top: 0px;
+        left: 0px;
+        background-color: green;
+    }
+    40% {
+        top: 178px;
+        left: 88px;
+        background-color: lightgreen;
+    }
+    50% {
+        top: 178px;
+        left: 88px;
+        background-color: cyan;
+    }
+    60% {
+        top: 178px;
+        left: 88px;
+        background-color: blue;
+    }
+    70%{
+        top: 0px;
+        left: 0px;
+        background-color: purple;
+    }
+    80%{
+        top: 0px;
+        left: 0px;
+        background-color: magenta;
+    }
+    90%{
+        top: 0px;
+        left: 0px;
+        background-color: red;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: orange;
+    }
+}
+
+#circle3 {
+    position: relative;
+    animation: myCircle3 2s infinite;
+}
+@keyframes myCircle3 {
+    10% {
+        background-color: yellow;
+        top: 0px;
+        left: 0px
+    }
+
+    20% {
+        top: 0px;
+        left: 0px;
+        background-color: green;
+    }
+
+    30% {
+        top: 0px;
+        left: 0px;
+        background-color: lightgreen;
+    }
+    40% {
+        top: 178px;
+        left: 0px;
+        background-color: cyan;
+    }
+    50% {
+        top: 178px;
+        left: 0px;
+        background-color: blue;
+    }
+    60% {
+        top: 178px;
+        left: 0px;
+        background-color: purple;
+    }
+    70%{
+        top: 0px;
+        left: 0px;
+        background-color: magenta;
+    }
+    80%{
+        top: 0px;
+        left: 0px;
+        background-color: red;
+    }
+    90%{
+        top: 0px;
+        left: 0px;
+        background-color: orange;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: yellow;
+    }
+}
+
+
+#circle4 {
+    position: relative;
+    animation: myCircle4 2s infinite;
+}
+
+@keyframes myCircle4 {
+    10% {
+        background-color: green;
+        top: 0px;
+        left: 0px
+    }
+
+    20% {
+        top: 0px;
+        left: 0px;
+        background-color: lightgreen;
+    }
+
+    30% {
+        top: 0px;
+        left: -65px;
+        background-color: cyan;
+    }
+    40% {
+        top: 178px;
+        left: -65px;
+        background-color: blue;
+    }
+    50% {
+        top: 178px;
+        left: -45px;
+        background-color: purple;
+
+    }
+    60% {
+        top: 178px;
+        left: -65px;
+        background-color: magenta;
+    }
+    70%{
+        top: 0px;
+        left: -65px;
+        background-color: red;
+    }
+    80%{
+        top: 0px;
+        left: 0px;
+        background-color: orange;
+    }
+    90%{
+        top: 0px;
+        left: 0px;
+        background-color: yellow;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: green;
+    }
+}
+
+#circle5 {
+    
+    position: relative;
+    animation: myCircle5 2s infinite;
+}
+
+@keyframes myCircle5 {
+    10% {
+        background-color: lightgreen;
+        top: 0px;
+        left: 0px
+    }
+
+    20% {
+        top: 0px;
+        left: 0px;
+        background-color: cyan;
+    }
+
+    30% {
+        top: 0px;
+        left: 0px;
+        background-color: blue;
+    }
+    40% {
+        top: 178px;
+        left: 0px;
+        background-color: purple;
+    }
+    50% {
+        top: 178px;
+        left: 0px;
+        background-color: magenta;
+    }
+    60% {
+        top: 178px;
+        left: 0px;
+        background-color: red;
+    }
+    70%{
+        top: 0px;
+        left: 0px;
+        background-color: orange;
+    }
+    80%{
+        top: 0px;
+        left: 0px;
+        background-color: yellow;
+    }
+    90%{
+        top: 0px;
+        left: 0px;
+        background-color: green;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: lightgreen;
+    }
+}
+
+
+#circle6 {
+    background-color: cyan;
+    position: relative;
+    animation: myCircle6 2s infinite;
+}
+
+@keyframes myCircle6 {
+    10% {
+        background-color: cyan;
+        top: 0px;
+        left: 0px
+    }
+
+    20% {
+        top: 0px;
+        left: 0px;
+        background-color: blue;
+    }
+
+    30% {
+        top: 0px;
+        left: 65px;
+        background-color: purple;
+    }
+    40% {
+        top: 178px;
+        left: 65px;
+        background-color: magenta;
+    }
+    50% {
+        top: 178px;
+        left: 45px;
+        background-color: red;
+    }
+    60% {
+        top: 178px;
+        left: 65px;
+        background-color: orange;
+    }
+    70%{
+        top: 0px;
+        left: 65px;
+        background-color: yellow;
+    }
+    80%{
+        top: 0px;
+        left: 0px;
+        background-color: green;
+    }
+    90%{
+        top: 0px;
+        left: 0px;
+        background-color: lightgreen;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: cyan;
+    }
+}
+
+#circle7 {
+    position: relative;
+    animation: myCircle7 2s infinite;
+}
+
+@keyframes myCircle7 {
+    10% {
+        background-color: blue;
+        top: 0px;
+        left: 0px
+    }
+
+    20% {
+        background-color: purple;
+        top: 0px;
+        left: 0px;
+    }
+
+    30% {
+        top: 0px;
+        left: 0px;
+        background-color: magenta;
+    }
+    40% {
+        top: 178px;
+        left: 0px;
+        background-color: red;
+    }
+    50% {
+        top: 178px;
+        left: 0px;
+        background-color: orange;
+    }
+    60% {
+        top: 178px;
+        left: 0px;
+        background-color: yellow;
+    }
+    70%{
+        top: 0px;
+        left: 0px;
+        background-color: green;
+    }
+    80%{
+        top: 0px;
+        left: 0px;
+        background-color: lightgreen;
+    }
+    90%{
+        top: 0px;
+        left: 0px;
+        background-color: cyan;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: blue;
+    }
+}
+
+#circle8 {
+    position: relative;
+    animation: myCircle8 2s infinite;
+}
+@keyframes myCircle8 {
+    10% {
+        background-color: purple;
+        top: 0px;
+        left: 0px
+    }
+
+    20% {
+        top: 0px;
+        left: 0px;
+        background-color: magenta;
+    }
+
+    30% {
+        top: 0px;
+        left: 0px;
+        background-color: red;
+    }
+    40% {
+        top: 178px;
+        left: -88px;
+        background-color: orange;
+    }
+    50% {
+        top: 178px;
+        left: -88px;
+        background-color: yellow;
+    }
+    60% {
+        top: 178px;
+        left: -88px;
+        background-color: green;
+    }
+    70%{
+        top: 0px;
+        left: 0px;
+        background-color: lightgreen;
+    }
+    80%{
+        top: 0px;
+        left: 0px;
+        background-color: cyan;
+    }
+    90%{
+        top: 0px;
+        left: 0px;
+        background-color: blue;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: purple;
+    }
+}
+
+#circle9 {
+    position: relative;
+    animation: myCircle9 2s infinite;
+}
+
+@keyframes myCircle9 {
+    10% {
+        background-color: magenta;
+        top: 0px;
+        left: 0px
+    }
+
+    20% {
+        top: 0px;
+        left: 0px;
+        background-color: red;
+    }
+
+    30% {
+        top: 0px;
+        left: 0px;
+        background-color: orange;
+    }
+    40% {
+        top: 178px;
+        left: -178px;
+        background-color: yellow;
+    }
+    50% {
+        top: 178px;
+        left: -178px;
+        background-color: green;
+    }
+    60% {
+        top: 178px;
+        left: -178px;
+        background-color: lightgreen;
+    }
+    70%{
+        top: 0px;
+        left: 0px;
+        background-color: cyan;
+    }
+    80%{
+        top: 0px;
+        left: 0px;
+        background-color: blue;
+    }
+    90%{
+        top: 0px;
+        left: 0px;
+        background-color: purple;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: magenta;
+    }
+}
