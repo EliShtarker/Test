@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <style>
+    select option[value="text"] {
+      display: none;
+    }
+
+    .custom-file-button input[type=file] {
+      margin-left: -2px !important;
+    }
+
+    .custom-file-button input[type=file]::-webkit-file-upload-button {
+      display: none;
+    }
+
+    .custom-file-button input[type=file]::file-selector-button {
+      display: none;
+    }
+
+    .custom-file-button:hover label {
+      background-color: #dde0e3;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-4 position-relative">
+
+      <h3>Create new account</h3>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">first name</label>
+        <input type="text" class="form-control" placeholder="first name" </div>
+
+        <br/>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput2" class="form-label">last name</label>
+          <input type="text" class="form-control" placeholder="last name" </div>
+
+          <br />
+
+          <p>how do you know about us.</p>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Friend
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Facebook
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault3">
+              Other
+            </label>
+          </div>
+          <br />
+
+          <label for="inputPassword5" class="form-label">Create a password</label>
+          <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+          <div id="passwordHelpBlock" class="form-text">
+            Your password must be 8-20 characters long.
+          </div>
+
+          <br />
+          <select class="form-select" aria-label="Default select example">
+            <option selected value="text">choose a question</option>
+            <option value="1">what is your favorite color ?</option>
+            <option value="2">where you were burn ?</option>
+            <option value="3">what is your hobbie ?</option>
+          </select>
+
+          <br />
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput3" class="form-label">Response</label>
+            <input type="text" class="form-control" placeholder="Response" </div>
+            
+            <br />
+            
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter email">
+              will never share with any one else.
+            </div>
+
+
+            
+            <div class="input-group custom-file-button">
+              <input type="file" class="form-control" id="inputGroupFile">
+              <label class="input-group-text" for="inputGroupFile">Browse</label>
+            </div>
+
+            <br/>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                i agree to the policy
+              </label>
+            </div>
+
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Send me all the news
+              </label>
+            </div>
+            
+
+
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+  </form>
+
+
+
+
+
+</body>
+
+</html>
